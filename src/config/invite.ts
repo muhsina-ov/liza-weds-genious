@@ -15,7 +15,7 @@ export const invite = {
     reference: "John 4:12",
   },
   /** Shown big in the hero */
-  dateLabel: "31.12.26",
+  dateLabel: "31. DEC. 2026",
   /** Local start / end of the wedding (ISO, no timezone) */
   start: "2026-12-31T13:00:00",
   end: "2026-12-31T21:00:00",

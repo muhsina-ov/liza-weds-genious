@@ -91,10 +91,7 @@ export function Note() {
             which by the grace of God will be solemnized
           </p>
           <div className="mt-4 inline-block rounded-xl border border-navy/20 bg-paper px-6 py-3 shadow-xs">
-            <p className="script text-3xl sm:text-4xl text-ink">
-              {invite.dayLine}
-            </p>
-            <p className="caps mt-1 text-[0.65rem] text-navy font-semibold">
+            <p className="caps text-[0.65rem] text-navy font-semibold tracking-wider">
               Solemnization Service at 1:00 P.M
             </p>
           </div>

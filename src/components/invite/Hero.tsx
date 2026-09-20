@@ -7,7 +7,6 @@ import { useParallax } from "@/hooks/use-parallax";
 import { getLenis } from "@/lib/lenis";
 import { PetalBurst } from "./PetalBurst";
 import { Petals } from "./Petals";
-import { ScriptNames } from "./Reveal";
 
 type Burst = { id: number; x: number; y: number };
 
@@ -19,7 +18,6 @@ export function Hero({ ready = true }: { ready?: boolean }) {
   const [bursts, setBursts] = useState<Burst[]>([]);
 
   const ease = [0.22, 0.61, 0.36, 1] as const;
-  const anim = ready ? "show" : "hidden";
 
   /** Tap anywhere on the hero to scatter petals — pure delight. */
   const scatter = useCallback(
@@ -112,33 +110,9 @@ export function Hero({ ready = true }: { ready?: boolean }) {
         </div>
       </motion.div>
 
-      <motion.p
-        className="caps mt-6 max-w-xs text-[0.62rem] leading-[2.1] text-navy-light sm:text-xs"
-        initial={{ opacity: 0 }}
-        animate={ready ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.7 }}
-      >
-        By the Grace of God, Celebrate the Union of
-      </motion.p>
-
-      <motion.h1
-        className="script mt-3 text-[3.25rem] leading-[1.05] text-ink sm:text-7xl"
-        initial="hidden"
-        animate={anim}
-      >
-        <ScriptNames text={invite.groom} delay={0.85} trigger={anim} />
-        <span className="mx-3 text-gold sm:mx-5">&</span>
-        <ScriptNames text={invite.bride} delay={1.2} trigger={anim} />
-      </motion.h1>
-
-      <motion.p
-        className="mt-2 text-sm text-sepia sm:text-base font-serif italic"
-        initial={{ opacity: 0 }}
-        animate={ready ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 1.4 }}
-      >
-        {invite.groomFull} &amp; {invite.brideFull}
-      </motion.p>
+      <h1 className="sr-only">
+        Holy Matrimony of {invite.groomFull} &amp; {invite.brideFull}
+      </h1>
 
       <motion.button
         type="button"
@@ -147,10 +121,10 @@ export function Hero({ ready = true }: { ready?: boolean }) {
           scrollOn();
         }}
         aria-label="Scroll to the invitation"
-        className="mt-10 flex min-h-14 flex-col items-center justify-end gap-2 px-8 pb-1"
+        className="mt-8 flex min-h-14 flex-col items-center justify-end gap-2 px-8 pb-1"
         initial={{ opacity: 0 }}
         animate={ready ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 1.8 }}
+        transition={{ duration: 1, delay: 0.8 }}
         whileTap={{ scale: 0.94 }}
       >
         <span className="caps text-[0.55rem] text-sepia/70">Scroll</span>
