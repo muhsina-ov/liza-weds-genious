@@ -20,24 +20,32 @@ const ogDescription = "Join us to celebrate the Holy Matrimony of Rev. Genious &
 // Optimal length 150-160 chars for Google search results
 const metaDescription = "Wedding invitation for Rev. Genious Marwein & Dr. Liza Dora Marbaniang. Holy Matrimony on Thursday, 31 Dec 2026 at Mawlai Presbyterian Church, Shillong.";
 
+const productionUrl = "https://liza-weds-genious.workers.dev";
+const ogImageUrl = `${productionUrl}/og-image.jpg`;
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title },
       { name: "description", content: metaDescription },
+      { property: "og:site_name", content: "Rev. Genious & Dr. Liza Dora Wedding" },
       { property: "og:title", content: title },
       { property: "og:description", content: ogDescription },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:url", content: `${productionUrl}/` },
+      { property: "og:image", content: ogImageUrl },
+      { property: "og:image:secure_url", content: ogImageUrl },
+      { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Wedding Invitation of Rev. Genious Marwein & Dr. Liza Dora Marbaniang" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: ogDescription },
-      { name: "twitter:image", content: "/og-image.jpg" },
+      { name: "twitter:image", content: ogImageUrl },
+      { name: "twitter:image:alt", content: "Wedding Invitation of Rev. Genious Marwein & Dr. Liza Dora Marbaniang" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: `${productionUrl}/` }],
   }),
   component: Invitation,
 });
