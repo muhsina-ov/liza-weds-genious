@@ -77,23 +77,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { title: "Rev. Genious Marwein & Dr. Liza Dora Marbaniang · Wedding Invitation" },
+      { title: "Rev. Genious & Dr. Liza Dora — Wedding Invitation" },
       {
         name: "description",
         content:
-          "Wedding invitation for Rev. Genious Marwein & Dr. Liza Dora Marbaniang. Holy Matrimony on Thursday, 31st December 2026 at Mawlai Presbyterian Church, Shillong.",
+          "Wedding invitation for Rev. Genious Marwein & Dr. Liza Dora Marbaniang. Holy Matrimony on 31 Dec 2026 at Mawlai Presbyterian Church, Shillong.",
       },
       { property: "og:site_name", content: "Rev. Genious & Dr. Liza Dora Wedding" },
       { property: "og:title", content: "Rev. Genious & Dr. Liza Dora — Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Join us to celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Thursday, 31st December 2026 at Mawlai Presbyterian Church, Shillong.",
+          "Celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Dec 31, 2026 at Mawlai Presbyterian Church, Shillong.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://liza-weds-genious.workers.dev/" },
-      { property: "og:image", content: "https://liza-weds-genious.workers.dev/og-image.jpg" },
-      { property: "og:image:secure_url", content: "https://liza-weds-genious.workers.dev/og-image.jpg" },
+      { property: "og:url", content: "https://liza-weds-genious.invitingyou.top/" },
+      { property: "og:image", content: "https://liza-weds-genious.invitingyou.top/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://liza-weds-genious.invitingyou.top/og-image.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
@@ -102,9 +102,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "Join us to celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Thursday, 31st December 2026 at Mawlai Presbyterian Church, Shillong.",
+          "Celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Dec 31, 2026 at Mawlai Presbyterian Church, Shillong.",
       },
-      { name: "twitter:image", content: "https://liza-weds-genious.workers.dev/og-image.jpg" },
+      { name: "twitter:image", content: "https://liza-weds-genious.invitingyou.top/og-image.jpg" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

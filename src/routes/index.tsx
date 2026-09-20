@@ -16,11 +16,11 @@ import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const title = "Rev. Genious & Dr. Liza Dora — Wedding Invitation";
 // Optimal length <= 125 chars for social preview cards (WhatsApp, Facebook, Twitter, LinkedIn)
-const ogDescription = "Join us to celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Dec 31, 2026 at Mawlai Church, Shillong.";
-// Optimal length 150-160 chars for Google search results
-const metaDescription = "Wedding invitation for Rev. Genious Marwein & Dr. Liza Dora Marbaniang. Holy Matrimony on Thursday, 31 Dec 2026 at Mawlai Presbyterian Church, Shillong.";
+const ogDescription = "Celebrate the Holy Matrimony of Rev. Genious & Dr. Liza Dora on Dec 31, 2026 at Mawlai Presbyterian Church, Shillong.";
+// Optimal length 140-155 chars for Google search results
+const metaDescription = "Wedding invitation for Rev. Genious Marwein & Dr. Liza Dora Marbaniang. Holy Matrimony on 31 Dec 2026 at Mawlai Presbyterian Church, Shillong.";
 
-const productionUrl = "https://liza-weds-genious.workers.dev";
+const productionUrl = "https://liza-weds-genious.invitingyou.top";
 const ogImageUrl = `${productionUrl}/og-image.jpg`;
 
 export const Route = createFileRoute("/")({
